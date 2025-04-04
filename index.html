@@ -1,19 +1,24 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Translator</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Word Translator</h1>
-      <input type="text" id="wordInput" placeholder="Enter a word">
-      <button onclick="translateWord()">Translate</button>
-      <div id="result"></div>
-      <audio id="audioPlayer" preload="auto"></audio>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Translator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Word Translator</h1>
+    <input type="text" id="wordInput" placeholder="Enter a word">
+    <button onclick="translateWord()">Translate</button>
+    <div id="result"></div>
+    <div id="audioControls" style="display: none;">
+      <button id="playBtn" class="audio-btn">Play</button>
+      <button id="pauseBtn" class="audio-btn">Pause</button>
+      <button id="repeatBtn" class="audio-btn">Repeat</button>
     </div>
-    <script src="script.js"></script>
-  </body>
-  </html>
+    <audio id="audioPlayer" preload="auto"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
